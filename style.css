@@ -1,0 +1,101 @@
+html {
+    font-size: 20px;
+}
+body {
+    max-height: 100vh;
+    display:flex;
+    flex-direction: column;
+  
+}
+#add-button {
+    padding: 10px;
+    font-size: 2rem;
+    
+}
+#pop-up.display {
+    display: flex;
+}
+#pop-up {
+    font-size: 1.5rem;
+    border-radius: 0.3em;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 50px 55px;
+    background-color: rgb(0, 170, 255);
+    display:none;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    z-index: 2;
+   
+}
+#pop-up input {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+}
+#pop-up button {
+    padding: 8px 25px;
+    align-self: center;
+}
+#title {
+    background-color: rgb(151, 210, 14);
+    text-align: center;
+    padding: 20px;
+    font-size: 3rem;
+}
+#grid-library {
+    display:grid;
+    padding: 1.5rem;
+    background-color: gray;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.card {
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+    border-radius: 0.3em;
+    background-color: white;
+    padding: 20px;
+}
+.card button {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+.card > header {
+    font-weight: bold;
+    align-self: center;
+}
+header + main {
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+main > div {
+    border-radius: 0.3em;
+    background-color: aquamarine;
+}
+#backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity for the desired blur effect */
+    backdrop-filter: blur(1px); /* Adjust the blur intensity */
+    z-index: 1; /* Ensure the backdrop is behind the popup */
+    display: none;
+}
+
+button.yesStatus {
+ background-color: greenyellow;
+}
+button.noStatus {
+    background-color: orangered;
+}
